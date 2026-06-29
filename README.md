@@ -6,6 +6,14 @@ The solution is built as a modular data processing pipeline where each stage has
 
 ---
 
+## Resources
+
+| Resource | Link |
+|----------|------|
+| 📄 Technical Design Document | <YOUR_PDF_LINK> |
+| 🎥 Demo Video | <YOUR_VIDEO_LINK> |
+---
+
 ## Features
 
 - Parses candidate data from ATS JSON (structured) and Resume TXT (unstructured).
@@ -67,13 +75,7 @@ ATS JSON          Resume TXT
          output.json
 ```
 
-Each stage has a single responsibility:
-
-- **Parsers** extract data from different source formats into a common canonical model.
-- **Normalization** standardizes values such as phone numbers and skill names.
-- **Merge** combines candidate information from multiple sources while preserving provenance.
-- **Projection** reshapes the canonical profile according to a configuration file.
-- **Validation** verifies the projected output before it is written to disk.
+Each stage has a single responsbility.
 
 - ---
 
@@ -107,8 +109,15 @@ Run the test suite using Node's built-in test runner:
 ```bash
 npm test
 ```
-
 The tests verify:
 
 - End-to-end pipeline execution against the expected output.
 - Skill normalization and merge behavior.
+---
+
+## Tech Stack
+
+- **Language:** JavaScript (Node.js)
+- **Testing:** Node.js Built-in Test Runner
+- **Phone Number Normalization:** libphonenumber-js
+
