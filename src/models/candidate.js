@@ -1,0 +1,3 @@
+/**
+ * Canonical candidate model.
+ */

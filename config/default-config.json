@@ -1,0 +1,5 @@
+{
+  "inputDir": "data/input",
+  "outputDir": "data/output",
+  "configFile": "config/custom-config.json"
+}

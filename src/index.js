@@ -1,6 +1,5 @@
 /**
- * Entry point for the candidate profile transformation pipeline.
- * Business logic will be implemented in later steps.
+ * CLI entry point for the candidate profile transformation pipeline.
  */
 
 console.log('Candidate profile transformation pipeline');
