@@ -11,13 +11,10 @@ Transforms candidate profiles from multiple sources (ATS exports, resumes) into 
 │   └── output/      # Transformed candidate profiles
 ├── src/
 │   ├── index.js           # CLI entry point
-│   ├── models/            # Canonical data models
 │   ├── parsers/           # Source-specific parsers
-│   ├── normalizers/       # Field normalization
-│   ├── merger/            # Multi-source merge logic
-│   ├── projector/         # Output projection
-│   ├── validators/        # Output validation
-│   └── utils/             # Shared utilities
+│   ├── services/          # Normalize, merge, and project
+│   ├── models/            # Canonical data models
+│   └── utils/             # Validation and helpers
 └── tests/
 ```
 

@@ -1,3 +1,0 @@
-/**
- * Phone number normalization.
- */
