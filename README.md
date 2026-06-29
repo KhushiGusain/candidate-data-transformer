@@ -2,8 +2,6 @@
 
 This project transforms candidate information from multiple sources into a single canonical candidate profile. It supports both structured (ATS JSON) and unstructured (Resume TXT) inputs, normalizes extracted data, merges information from different sources, and produces configurable output using a projection configuration.
 
-The solution is built as a modular data processing pipeline where each stage has a single responsibility, making the codebase easy to understand, maintain, and extend.
-
 ---
 
 ## Resources
@@ -12,6 +10,7 @@ The solution is built as a modular data processing pipeline where each stage has
 |----------|------|
 | Technical Design Document | <YOUR_PDF_LINK> |
 | Demo Video | <YOUR_VIDEO_LINK> |
+
 ---
 
 ## Features
@@ -75,7 +74,24 @@ ATS JSON          Resume TXT
          output.json
 ```
 
-Each stage has a single responsbility.
+---
+
+## Configuration
+
+The output schema is controlled through a JSON configuration file.
+
+The configuration supports:
+
+- Selecting which fields to include.
+- Renaming output fields.
+- Handling missing values (`null`, `omit`, or `error`).
+- Toggling confidence and provenance fields.
+
+Default configuration:
+
+```text
+data/input/default-config.json
+```
 
 - ---
 
@@ -101,6 +117,17 @@ data/output/output.json
 ```
 
 ---
+---
+
+## Sample Output
+
+Running the pipeline generates the transformed candidate profile at:
+
+```text
+data/output/output.json
+```
+
+The repository includes a sample output generated from the representative input files.
 
 ## Running Tests
 
