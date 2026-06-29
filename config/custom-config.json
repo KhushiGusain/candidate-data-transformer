@@ -1,1 +1,19 @@
-{}
+{
+  "inputDir": "data/input",
+  "outputDir": "data/output",
+  "projection": {
+    "mode": "custom",
+    "missingValue": "null",
+    "includeConfidence": true,
+    "mapping": {
+      "full_name": "fullName",
+      "primary_email": "emails[0]",
+      "phone": "phones[0]",
+      "skills": {
+        "source": "skills",
+        "extract": "name"
+      },
+      "overallConfidence": "overallConfidence"
+    }
+  }
+}

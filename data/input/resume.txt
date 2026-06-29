@@ -1,0 +1,18 @@
+PRIYA SHARMA
+Senior Software Engineer
+
+Email: priya.sharma@email.com
+Phone: +1 (415) 555-0198
+Location: San Francisco, CA, USA
+
+SKILLS
+JavaScript, Node.js, React, PostgreSQL
+
+EXPERIENCE
+Senior Software Engineer | TechNova Inc.
+January 2021 – Present
+Build and maintain customer-facing web applications using React and Node.js.
+
+EDUCATION
+B.S. Computer Science | University of California, Berkeley
+Graduated 2019

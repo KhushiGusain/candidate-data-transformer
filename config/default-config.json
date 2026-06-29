@@ -1,5 +1,22 @@
 {
   "inputDir": "data/input",
   "outputDir": "data/output",
-  "configFile": "config/custom-config.json"
+  "projection": {
+    "mode": "canonical",
+    "fields": [
+      "candidateId",
+      "fullName",
+      "emails",
+      "phones",
+      "location",
+      "links",
+      "headline",
+      "yearsExperience",
+      "skills",
+      "experience",
+      "education",
+      "provenance",
+      "overallConfidence"
+    ]
+  }
 }

@@ -1,0 +1,18 @@
+{
+  "applicant_id": "ATS-78432",
+  "candidate_name": "Priya Sharma",
+  "email_address": "priya.sharma@email.com",
+  "phone_number": "+1 (415) 555-0198",
+  "current_company": "TechNova Inc.",
+  "job_title": "Senior Software Engineer",
+  "location": "San Francisco, CA, USA",
+  "skills": [
+    "JavaScript",
+    "Node.js",
+    "React",
+    "PostgreSQL"
+  ],
+  "years_in_role": 5,
+  "application_status": "active",
+  "recruiter": "Jordan Lee"
+}
