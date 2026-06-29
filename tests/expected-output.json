@@ -1,0 +1,90 @@
+{
+    "fullName": "Priya Sharma",
+    "headline": "Senior Software Engineer",
+    "yearsExperience": null,
+    "email": "priya.sharma@email.com",
+    "phone": "+919876543210",
+    "skills": [
+      "JavaScript",
+      "Node.js",
+      "React",
+      "PostgreSQL"
+    ],
+    "location.city": "San Francisco",
+    "location.region": "CA",
+    "location.country": "USA",
+    "overallConfidence": 0.875,
+    "provenance": [
+      {
+        "field": "fullName",
+        "source": "ATS JSON",
+        "method": "field_mapping"
+      },
+      {
+        "field": "emails",
+        "source": "ATS JSON",
+        "method": "field_mapping"
+      },
+      {
+        "field": "phones",
+        "source": "ATS JSON",
+        "method": "field_mapping"
+      },
+      {
+        "field": "headline",
+        "source": "ATS JSON",
+        "method": "field_mapping"
+      },
+      {
+        "field": "experience.company",
+        "source": "ATS JSON",
+        "method": "field_mapping"
+      },
+      {
+        "field": "experience.title",
+        "source": "ATS JSON",
+        "method": "field_mapping"
+      },
+      {
+        "field": "skills",
+        "source": "ATS JSON",
+        "method": "field_mapping"
+      },
+      {
+        "field": "location",
+        "source": "ATS JSON",
+        "method": "field_mapping"
+      },
+      {
+        "field": "fullName",
+        "source": "Resume TXT",
+        "method": "line_parsing"
+      },
+      {
+        "field": "headline",
+        "source": "Resume TXT",
+        "method": "line_parsing"
+      },
+      {
+        "field": "emails",
+        "source": "Resume TXT",
+        "method": "regex"
+      },
+      {
+        "field": "phones",
+        "source": "Resume TXT",
+        "method": "regex"
+      },
+      {
+        "field": "skills",
+        "source": "Resume TXT",
+        "method": "section_parsing"
+      },
+      {
+        "field": "education",
+        "source": "Resume TXT",
+        "method": "section_parsing"
+      }
+    ]
+  }
+  
