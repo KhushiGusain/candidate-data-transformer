@@ -10,8 +10,8 @@ The solution is built as a modular data processing pipeline where each stage has
 
 | Resource | Link |
 |----------|------|
-| 📄 Technical Design Document | <YOUR_PDF_LINK> |
-| 🎥 Demo Video | <YOUR_VIDEO_LINK> |
+| Technical Design Document | <YOUR_PDF_LINK> |
+| Demo Video | <YOUR_VIDEO_LINK> |
 ---
 
 ## Features
