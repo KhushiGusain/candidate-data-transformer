@@ -117,7 +117,6 @@ data/output/output.json
 ```
 
 ---
----
 
 ## Sample Output
 
