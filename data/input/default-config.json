@@ -1,0 +1,16 @@
+{
+  "fields": [
+    "fullName",
+    "headline",
+    "yearsExperience",
+    { "path": "email", "from": "emails[0]" },
+    { "path": "phone", "from": "phones[0]" },
+    { "path": "skills", "from": "skills[].name" },
+    "location.city",
+    "location.region",
+    "location.country"
+  ],
+  "include_confidence": true,
+  "include_provenance": true,
+  "on_missing": "null"
+}

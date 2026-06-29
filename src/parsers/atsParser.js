@@ -47,8 +47,15 @@ function parseLocationString(location) {
  * @returns {object} Canonical candidate profile
  */
 export function parseATS(filePath) {
-  const atsData = JSON.parse(readFileSync(filePath, 'utf-8'));
   const candidate = createEmptyCandidate();
+
+  // Malformed or missing ATS files should not crash the pipeline.
+  let atsData;
+  try {
+    atsData = JSON.parse(readFileSync(filePath, 'utf-8'));
+  } catch {
+    return candidate;
+  }
 
   // candidate_name -> fullName
   if (atsData.candidate_name != null) {

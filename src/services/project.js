@@ -119,5 +119,11 @@ export function projectCandidate(candidate, config) {
     output.overallConfidence = candidate.overallConfidence;
   }
 
+  // Provenance is optional because consumers may only need the final profile,
+  // not the full field-level extraction audit trail.
+  if (config.include_provenance) {
+    output.provenance = [...candidate.provenance];
+  }
+
   return output;
 }
