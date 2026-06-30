@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -13,14 +13,25 @@ const rootDir = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 const ATS_PATH = join(rootDir, 'data/input/ats.json');
 const RESUME_PATH = join(rootDir, 'data/input/resume.txt');
-const CONFIG_PATH = join(rootDir, 'data/input/default-config.json');
+const INPUT_DIR = join(rootDir, 'data/input');
 const OUTPUT_PATH = join(rootDir, 'data/output/output.json');
+const DEFAULT_CONFIG_FILE = 'default-config.json';
 
 /**
  * Run the full candidate transformation pipeline.
  */
 function main() {
-  const config = JSON.parse(readFileSync(CONFIG_PATH, 'utf-8'));
+  // Projection config can be selected at runtime: node src/index.js custom-config.json
+  const configFileName = process.argv[2] ?? DEFAULT_CONFIG_FILE;
+  const configPath = join(INPUT_DIR, configFileName);
+
+  if (!existsSync(configPath)) {
+    console.error(`Config file not found: ${configPath}`);
+    process.exitCode = 1;
+    return;
+  }
+
+  const config = JSON.parse(readFileSync(configPath, 'utf-8'));
   const projectionConfig = config.projection ?? config;
 
   // Parse each source into a canonical candidate

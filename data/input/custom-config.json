@@ -1,0 +1,14 @@
+{
+    "fields": [
+      { "path": "candidate_name", "from": "fullName" },
+      "headline",
+      { "path": "primary_email", "from": "emails[0]" },
+      { "path": "primary_phone", "from": "phones[0]" },
+      { "path": "technical_skills", "from": "skills[].name" },
+      "location.city",
+      "location.country"
+    ],
+    "include_confidence": false,
+    "include_provenance": false,
+    "on_missing": "omit"
+  }
