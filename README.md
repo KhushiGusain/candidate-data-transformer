@@ -9,7 +9,7 @@ This project transforms candidate information from multiple sources into a singl
 | Resource | Link |
 |----------|------|
 | Technical Design Document | https://drive.google.com/file/d/1NLjch5MiM1Oj4RaB2wjU5JvJrF7twyBa/view?usp=sharing |
-| Demo Video | <YOUR_VIDEO_LINK> |
+| Demo Video | https://drive.google.com/file/d/1EhLX7XGvjJ5ZjXPUzDJfLWqojOzi4LQt/view?usp=sharing |
 
 ---
 
